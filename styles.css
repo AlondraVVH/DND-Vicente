@@ -49,7 +49,7 @@ nav a:hover {
 /* Estilos para enlaces activos */
 nav a.active {
     color: #9c6f27;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Secciones */
@@ -160,59 +160,90 @@ body {
     transform: scale(1.05);
 }
 
-/* Servicios */
-#servicios ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 600px;
-    text-align: left;
+#servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-#servicios ul li {
+#servicios p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.servicios-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.servicio {
     background-color: #1e1e1e;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 5px;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
     border: 1px solid #9c6f27;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#servicios ul li:hover {
-    background-color: #9c6f27;
-    transform: translateX(10px);
+.servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
+.servicio p {
+    font-size: 1rem;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 /* Contacto */
 #contacto {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Alinea el texto al centro */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 800px;
+    border: 2px solid #9c6f27;
 }
 
 #contacto h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #e4dbc8;
+    font-family: 'Cinzel', serif;
 }
 
 #contacto p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #e4dbc8;
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.contacto-info {
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 #contacto ul {
     list-style: none;
     padding: 0;
-    margin-top: 1rem;
-    width: 100%;
+    margin: 0;
+    color: #e4dbc8;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
 }
 
 #contacto ul li {
     margin: 1rem 0;
-    color: #e4dbc8;
 }
 
 #contacto ul li strong {
@@ -228,7 +259,25 @@ body {
 
 #contacto a:hover {
     color: #9c6f27;
+    text-decoration: none;
 }
+
+/* Estilo adicional para los enlaces */
+.contacto-info a {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Mejorar el aspecto visual del pie de página */
+footer {
+    background-color: #333;
+    color: #e4dbc8;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Arial', sans-serif;
+    margin-top: 4rem;
+}
+
 
 /* Footer */
 footer {
