@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Trabajos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portafolio de D&D de Alondra</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="galeria">
+            <h2>Galería de Trabajos</h2>
+            <div class="galeria">
+                <div class="item">
+                    <img src="trabajo1.jpg" alt="Proyecto 1">
+                    <p>Descripción del trabajo 1.</p>
+                </div>
+                <div class="item">
+                    <img src="trabajo2.jpg" alt="Proyecto 2">
+                    <p>Descripción del trabajo 2.</p>
+                </div>
+                <!-- Agrega más elementos según sea necesario -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alondra Scarlett Pino González. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Este script se asegurará de que el enlace correspondiente esté resaltado
+        document.addEventListener('DOMContentLoaded', function () {
+            let links = document.querySelectorAll('nav a');  // Obtiene todos los enlaces del menú
+            links.forEach((link) => {
+                // Compara el href de cada enlace con la página actual
+                if (link.getAttribute('href') === 'galeria.html') {
+                    link.classList.add('active');  // Agrega la clase "active" al enlace de la página activa
+                }
+            });
+        });
+    </script>
+</body>
+</html>
